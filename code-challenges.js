@@ -39,18 +39,6 @@ console.log(sameSquared(arr, arr2))
 // to zero or undefined if a pair does not exist.
 
 const sumZero = (arr) => {
-  //   for (let i = 0; i < arr.length / 2; i++) {
-  //     if (arr[i] === arr[arr.length - i - 1]) {
-  //       return undefined
-  //     } else {
-  //       const sumTwoEl = arr[i] + arr[arr.length - i - 1]
-  //       if (sumTwoEl === 0) {
-  //         return [arr[i], arr[arr.length - i - 1]]
-  //       } else {
-  //         continue
-  //       }
-  //     }
-  //   }
   let hashMap = {},
     result = []
   for (let i = 0; i < arr.length; i++) {
