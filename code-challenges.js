@@ -32,3 +32,39 @@ const arr = [1, 1, 4, 2]
 const arr2 = [1, 4, 2, 1]
 console.log(arr.map((el) => Math.pow(el, 2)))
 console.log(sameSquared(arr, arr2))
+
+// 2.	Write a function called sumZero which accepts a sorted
+// array of integers. The function should find the first pair where
+// the sum is 0. Return an array that includes both values that sum
+// to zero or undefined if a pair does not exist.
+
+const sumZero = (arr) => {
+  //   for (let i = 0; i < arr.length / 2; i++) {
+  //     if (arr[i] === arr[arr.length - i - 1]) {
+  //       return undefined
+  //     } else {
+  //       const sumTwoEl = arr[i] + arr[arr.length - i - 1]
+  //       if (sumTwoEl === 0) {
+  //         return [arr[i], arr[arr.length - i - 1]]
+  //       } else {
+  //         continue
+  //       }
+  //     }
+  //   }
+  let hashMap = {},
+    result = []
+  for (let i = 0; i < arr.length; i++) {
+    if (hashMap[arr[i]]) {
+      result.push([hashMap[arr[i]], arr[i]])
+      return result
+    } else {
+      hashMap[0 - arr[i]] = arr[i]
+    }
+  }
+  return undefined
+}
+
+console.log(sumZero([-3, -2, -1, 0, 1, 2, 3]))
+console.log(sumZero([-2, -1, -1, 0, 1.5, 2, 2, 2, 3, 3, 4, 5, 6]))
+console.log(sumZero([-2, 0, 1, 3]))
+console.log(sumZero([-1, 1, 2, 3]))
