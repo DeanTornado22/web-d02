@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+.w3-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 5px 20px;
+}
+.w3-text-button {
+  display: flex;
+  align-items: center;
+}
+.w3-logo {
+  text-decoration: none;
+  font-size: 50px;
+  color: #555;
+}
+.dotcom {
+  color: green;
+}
+.w3-text-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.w3-world-largest {
+  font-family: 'Shippori Mincho', serif;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+.w3-login {
+  border-radius: 5px;
+  background-color: #28bd6b;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.w3-login:hover {
+  background-color: greenyellow;
+}
+.w3-bar {
+  background-color: #555;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.no-margin {
+  margin: 0;
+}
+.fa-home {
+  padding: 10px 15px;
+  transition: all 0.2s;
+}
+
+.fa-home:hover {
+  background-color: black;
+}
+
+.active {
+  background-color: #4caf50;
+}
+.header-item {
+  padding: 10px 15px;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none !important;
+  font-size: 17px;
+}
+.header-item:hover {
+  background-color: black;
+}
+.left {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: auto;
+}
+.right {
+  display: flex;
+  align-items: center;
+}
